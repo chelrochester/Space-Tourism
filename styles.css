@@ -2,6 +2,29 @@
 
 .home {
     background-image: url(starter-code/assets/home/background-home-desktop.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.dest {
+    background-image: url(starter-code/assets/destination/background-destination-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.crew {
+    background-image: url(starter-code/assets/crew/background-crew-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.tech {
+    background-image: url(starter-code/assets/technology/background-technology-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #fff;
 }
 
@@ -107,4 +130,10 @@ a:after {
 .explore:hover {
     box-shadow: 0 0 0 75px rgba(241, 243, 241, 0.15);
     cursor: pointer;
+}
+
+.dest-sect {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

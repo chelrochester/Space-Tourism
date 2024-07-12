@@ -1,20 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dest">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
-<body>
-    <nav>
+<body class="body.dest">
+    <nav class="nav">
         <img src="\starter-code\assets\shared\logo.svg" alt="icon" id="logo">
-        <ul class="nav">
+        <ul class="navlink">
             <li><a href="/home.html">00 Home</a></li>
             <li><a href="/destination.html"> 01 Destination</a></li>
             <li><a href="/crew.html">02 Crew</a></li>
             <li><a href="/technology.html">03 Technology</a></li>
         </ul>
     </nav>
+    <section class="dest-sect">
+        <h2>01 Choose your destination</h2>
+        <div class="destinations">
+            <img src="starter-code/assets/destination/image-moon.png" alt="destination image" id="dest-img">
+            <nav>
+                <ul class="dest-nav">
+                    <li><a href="#" data-destination="moon">Moon</a></li>
+                    <li><a href="#" data-destination="mars">Mars</a></li>
+                    <li><a href="#" data-destination="europa">Europa</a></li>
+                    <li><a href="#" data-destination="titan">Titan</a></li>
+                </ul>
+            </nav>
+            <div class="dest-info">
+                <h1 id="dest-title">Moon</h1>
+                <p id="dest-desc">See our planet as you've never seen it before. A perfect relaxing trip away
+                    to help regain perspective and come back refreshed. While you're there, take in some
+                    history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                <div class="dest-details">
+                    <div>
+                        <p>Avg. distance</p>
+                        <h2 id="dest-dist">384,400 KM</h2>
+                    </div>
+                    <div>
+                        <p>Est. travel time</p>
+                        <h2 id="dest-time">3 days</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
