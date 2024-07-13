@@ -190,7 +190,7 @@ a:after {
     margin: 10px 10px 10px 0;
 }
 
-.dest-dist  {
+.dest-distance  {
     display: flex;
     flex-direction: column;
     margin-right: 90px;
@@ -202,6 +202,6 @@ a:after {
     margin-right: 90px;
 }
 
-#dest-dist, #dest-time {
+#dest-distance, #dest-time {
     margin: 0;
 }

@@ -35,9 +35,9 @@
                         to help regain perspective and come back refreshed. While you're there, take in some
                         history by visiting the Luna 2 and Apollo 11 landing sites.</p>
                     <div class="dest-details">
-                        <div class="dest-dist">
+                        <div class="dest-distance">
                             <p>Avg. distance</p>
-                            <h2 id="dest-dist">384,400 KM</h2>
+                            <h2 id="dest-distance">384,400 KM</h2>
                         </div>
                         <div class="dest-time">
                             <p>Est. travel time</p>
@@ -49,6 +49,66 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const destinations = {
+                moon: {
+                    title: 'Moon',
+                    description: "See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you're there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
+                    distance: '384,400 KM',
+                    travelTime: '3 days',
+                    image: 'starter-code/assets/destination/image-moon.png'
+                },
+                mars: {
+                    title: 'Mars',
+                    description: "Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It's two and a half times the size of Everest!",
+                    distance: '225 MIL. KM',
+                    travelTime: '9 months',
+                    image: 'starter-code/assets/destination/image-mars.png'
+                },
+                europa: {
+                    title: 'Europa',
+                    description: "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover's dream. With an icy surface, it's perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
+                    distance: '628 MIL. KM',
+                    travelTime: '3 years',
+                    image: 'starter-code/assets/destination/image-europa.png'
+                },
+                titan: {
+                    title: 'Titan',
+                    description: "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.",
+                    distance: '1.6 BIL. KM',
+                    travelTime: '7 years',
+                    image: 'starter-code/assets/destination/image-titan.png'
+                }
+            };
+
+            const navLinks = document.querySelectorAll('.dest-nav a');
+            const destinationTitle = document.getElementById('dest-title');
+            const destinationDescription = document.getElementById('dest-desc');
+            const destinationDistance = document.getElementById('dest-distance');
+            const destinationTravelTime = document.getElementById('dest-time');
+            const destinationImage = document.getElementById('dest-img');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    console.log('Link clicked'); // Debugging line
+                    const destination = e.target.getAttribute('data-destination');
+                    console.log(destination); // Debugging line
+                    const data = destinations[destination];
+
+                    destinationTitle.textContent = data.title;
+                    destinationDescription.textContent = data.description;
+                    destinationDistance.textContent = data.distance;
+                    destinationTravelTime.textContent = data.travelTime;
+                    destinationImage.src = data.image;
+
+                    // Update active link
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    e.target.classList.add('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
