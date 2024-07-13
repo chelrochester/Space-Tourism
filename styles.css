@@ -205,3 +205,42 @@ a:after {
 #dest-distance, #dest-time {
     margin: 0;
 }
+
+.h2-crew {
+    font-size: 1.5rem;
+    margin-top: 70px;
+    margin-right: 0;
+}
+
+.crew-container {
+    margin: 20px;
+    margin-left: 150px;
+}
+
+.crew-details {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 80px;
+    margin-top: 0;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.crew-title {
+    font-size: 30px;
+    margin: 0;
+}
+
+.crew-name {
+    font-size: 56px;
+    margin: 0;
+}
+
+.crew-img {
+    width: 40%;
+    margin: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 65%, transparent 100%);
+}
