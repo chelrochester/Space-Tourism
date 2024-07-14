@@ -32,18 +32,24 @@
     font-style: normal;
     line-height: 171.9%;
     letter-spacing: 0;
+    text-transform: uppercase;
 }
 
 .barlow-regular {
     font-family: "Barlow", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0;
+
 }
 
 .barlow-condensed-regular {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-transform: uppercase;
 }
 
 body {
@@ -157,6 +163,8 @@ a {
 #dest-img {
     margin-right: 100px;
     margin-top: 150px;
+    width: 50%;
+    height: 50%;
 }
 
 
@@ -178,6 +186,9 @@ a {
     padding: 20px;
     padding-left: 0;
     margin: 10px 10px 30px 0;
+    font-size: 16px;
+    line-height: 19.2%;
+    letter-spacing: 2px;
 }
 
 #dest-title {
@@ -211,18 +222,29 @@ a {
     margin-right: 90px;
 }
 
+.dest-distance, .dest-time {
+    font-size: 14px;
+    line-height: 16.8%;
+    letter-spacing: 2px;
+}
+
+#dest-distance, #dest-time {
+    font-size: 28px;
+    line-height: 32.1%;
+    letter-spacing: 0;
+    margin-top: 20px;
+}
+
 .dest-time {
     display: flex;
     flex-direction: column;
     margin-right: 90px;
 }
 
-#dest-distance, #dest-time {
-    margin: 0;
-}
-
 .h2-crew, .h2-tech {
     font-size: 1.5rem;
+    line-height: 19.8%;
+    letter-spacing: 0;
     margin-top: 70px;
     margin-right: 0;
 }
@@ -248,8 +270,12 @@ a {
 }
 
 .crew-title, .tech-title {
-    font-size: 30px;
+    font-size: 28px;
+    line-height: 33.6%;
+    letter-spacing: 4px;
     margin: 0;
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .crew-name, .tech-term {
