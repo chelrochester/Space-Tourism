@@ -20,11 +20,11 @@
             <div class="tech-container">
                 <h2 class="h2-tech">03 Space launch 101</h2>
                 <div class="tech-details">
-                    <img src="starter-code/assets/technology/image-launch-vehicle-portrait.jpg" alt="tech" class="tech-img" >
+                    <img src="starter-code/assets/technology/image-launch-vehicle-portrait.jpg" alt="tech" class="tech-img" id="tech-img" >
                     <div class="tech-card">
                         <h3 class="bellefair-regular tech-title">The terminology...</h3>
-                        <h1 class="bellefair-regular tech-term">Launch vehicle</h1>
-                        <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle
+                        <h1 class="bellefair-regular tech-term" id="tech-term">Launch vehicle</h1>
+                        <p id="tech-desc">A launch vehicle or carrier rocket is a rocket-propelled vehicle
                             used to carry a payload from Earth's surface to space,
                             usually to Earth orbit or beyond. Our JSF
                             Space Shuttle was a two-stage, fully reusable launch vehicle
@@ -35,14 +35,65 @@
                     <div class="tech-menu">
                         <nav>
                             <ul class="tech-nav">
-                                <li><a href="#" data-destination="moon">1</a></li>
-                                <li><a href="#" data-destination="mars">2</a></li>
-                                <li><a href="#" data-destination="europa">3</a></li>
+                                <li><a href="#" tech-navigation="1">1</a></li>
+                                <li><a href="#" tech-navigation="2">2</a></li>
+                                <li><a href="#" tech-navigation="3">3</a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
             </div>
     </section>
+
+    <script>
+     document.addEventListener('DOMContentLoaded', () => {
+            const technology = {
+                launchVehicle: {
+                    title: 'Launch Vehicle',
+                    description: "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our JSF Space Shuttle was a two-stage, fully reusable launch vehicle designed for space shuttle missions mounted on the external tank.",
+                    image: 'starter-code/assets/technology/image-launch-vehicle-portrait.jpg'
+                },
+                spaceport: {
+                    title: 'Spaceport',
+                    description: "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.",
+                    image: 'starter-code/assets/technology/image-spaceport-portrait.jpg'
+                },
+                spaceCapsule: {
+                    title: 'Space Capsule',
+                    description: "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",
+                    image: 'starter-code/assets/technology/image-space-capsule-portrait.jpg'
+                }
+            };
+
+            const techLinks = document.querySelectorAll('.tech-nav a');
+            const techTerm = document.getElementById('tech-term');
+            const techDesc = document.getElementById('tech-desc');
+            const techImage = document.getElementById('tech-img');
+
+            const techMap = {
+        '1': 'launchVehicle',
+        '2': 'spaceport',
+        '3': 'spaceCapsule'
+    };
+
+            techLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    console.log('Link clicked');
+                    const terminology = e.target.getAttribute('tech-navigation');
+                    console.log(terminology);
+                    const data = technology[techMap[terminology]];
+
+                    techTerm.textContent = data.title;
+                    techDesc.textContent = data.description;
+                    techImage.src = data.image;
+
+                    // Update active link
+                    techLinks.forEach(link => link.classList.remove('active'));
+                    e.target.classList.add('active');
+                });
+                });
+        });
+    </script>
 </body>
 </html>
