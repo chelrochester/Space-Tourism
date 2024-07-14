@@ -29,5 +29,18 @@
         </div>
         <button type="button" class="explore bellefair-regular">Explore</button>
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const mainNavLinks = document.querySelectorAll('.navlink li a');
+
+    mainNavLinks.forEach(link => {
+        if (link.href === window.location.href) {
+            link.parentElement.classList.add('active');
+        }
+    });
+
+});
+    </script>
 </body>
 </html>
