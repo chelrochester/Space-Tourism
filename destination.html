@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body class="body.dest">
@@ -104,9 +113,9 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.forEach(link => {
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
-                    console.log('Link clicked'); // Debugging line
+                    console.log('Link clicked'); 
                     const destination = e.target.getAttribute('data-destination');
-                    console.log(destination); // Debugging line
+                    console.log(destination); 
                     const data = destinations[destination];
 
                     destinationTitle.textContent = data.title;
@@ -115,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     destinationTravelTime.textContent = data.travelTime;
                     destinationImage.src = data.image;
 
-                    // Update active link
+                    
                     navLinks.forEach(link => link.classList.remove('active'));
                     e.target.classList.add('active');
                 });
