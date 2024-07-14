@@ -191,6 +191,10 @@ a {
     letter-spacing: 2px;
 }
 
+.dest-info {
+    width: 700px;
+}
+
 #dest-title {
     font-size: 100px;
     margin: 0;
@@ -219,7 +223,6 @@ a {
 .dest-distance  {
     display: flex;
     flex-direction: column;
-    margin-right: 90px;
 }
 
 .dest-distance, .dest-time {
@@ -227,7 +230,8 @@ a {
     line-height: 16.8%;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-top: 50px;
+    margin: 50px;
+    width: 300px;
 }
 
 #dest-distance, #dest-time {
