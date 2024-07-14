@@ -74,11 +74,11 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+.navlink a:hover {
     border-bottom: 1px solid #fff;
 }
 
-a:after {
+.navlink a:after {
     border-bottom: 2px solid #fff;
 }
 
@@ -257,4 +257,51 @@ a:after {
 
 .tech-details {
     margin-top: 100px;
+}
+
+.tech-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.tech-nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: none;
+    margin: 30px;
+    list-style: none !important;
+    border: #4d4d4d solid .2px;
+}
+
+.tech-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+}
+
+.tech-nav li:hover {
+    background-color: #fff;
+}
+
+.tech-nav a:hover {
+    color: #000;
+}
+
+.tech-nav li:active {
+    background-color: #fff;
+}
+
+.tech-nav a:active {
+    color: #000;
 }
