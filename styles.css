@@ -386,24 +386,17 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    .nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .menu-icon {
         display: block;
         font-size: 24px;
         cursor: pointer;
         padding: 10px;
-        position: absolute;
-        top: 10px;
-        right: 20px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
     }
 
     .navlink {
@@ -430,19 +423,86 @@ a {
         padding: 10px 0;
     }
 
-    .sect-home {
+    .sect-home, .crew-container, .tech-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 20px;
+        margin: 10px;
     }
 
-    .home-text {
+    .home-text, .tech-card {
         width: 80%;
         margin: 20px 0;
     }
 
-    .h2-home {
+    .destination-text {
+        width: 40%;
+        margin: 20px;
+    }
+
+    .dest-info {
+        margin: 0;
+        width: 80%;
+    }
+
+    nav .dest-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .dest-sect {
+        display: flex;
+        flex-direction: column-revers;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .destinations {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    #dest-desc {
+        width: 80%;
+    }
+
+    #dest-img {
+        width: 30%;
+        height: auto;
+        margin: 0;
+    }
+
+    .dest-distance, .dest-time {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    .dest-distance p, .dest-time p {
+        margin: 30px;
+        width: 150px;
+    }
+
+    #dest-distance, #dest-time {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .crew-card {
+        margin: 20px;
+    }
+
+    .crew-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h2-home, .h2-crew, .h2-tech, .h2-destination {
         font-size: 24px;
     }
 
@@ -450,13 +510,55 @@ a {
         font-size: 100px;
     }
 
-    .p-home {
+    .p-home, #dest-desc, #tech-desc, #crew-description {
         font-size: 16px;
+    }
+
+    .crew-title, .tech-details {
+        margin: 0;
+        padding: 0;
+    }
+
+    #crew-nav {
+        margin: 10px;
+    }
+
+    .tech-title {
+        margin: 10px;
+        height: 60px;
+        width: 300px;
+        font-size: 22px;
     }
 
     .explore {
         width: 200px;
         height: 200px;
         font-size: 24px;
+    }
+
+     .crew-img, .tech-img {
+        width: 80%;
+        height: auto;
+        margin: 0;
+    }
+
+    .dest-nav, .tech-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dest-nav a, .tech-nav a {
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    .tech-details {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .tech-nav {
+        display: flex;
+        flex-direction: row;
     }
 }
