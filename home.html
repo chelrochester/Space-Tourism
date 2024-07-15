@@ -17,6 +17,9 @@
 </head>
 <body class="body-home">
     <nav class="nav">
+        <div class="menu-icon" id="menu-icon">
+            ☰
+        </div>
         <img src="\starter-code\assets\shared\logo.svg" alt="icon" id="logo">
         <ul class="navlink barlow-condensed-regular">
             <li><a href="/home.html">00 Home</a></li>
@@ -45,6 +48,22 @@
             link.parentElement.classList.add('active');
         }
     });
+    
+    document.addEventListener('DOMContentLoaded', () => {
+    const mainNavLinks = document.querySelectorAll('.navlink li a');
+    const menuIcon = document.getElementById('menu-icon');
+    const navLinks = document.getElementById('navlink');
+
+    menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    mainNavLinks.forEach(link => {
+        if (link.href === window.location.href) {
+            link.parentElement.classList.add('active');
+        }
+    });
+});
 
 });
     </script>
