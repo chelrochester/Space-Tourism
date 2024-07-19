@@ -16,18 +16,20 @@
     <title>Space Tourism</title>
 </head>
 <body class="body-home">
-    <nav class="nav">
+    <header class="nav-header">
         <div class="menu-icon" id="menu-icon">
             ☰
         </div>
-        <img src="\starter-code\assets\shared\logo.svg" alt="icon" id="logo">
-        <ul class="navlink barlow-condensed-regular">
-            <li><a href="/home.html">00 Home</a></li>
-            <li><a href="/destination.html"> 01 Destination</a></li>
-            <li><a href="/crew.html">02 Crew</a></li>
-            <li><a href="/technology.html">03 Technology</a></li>
-        </ul>
-    </nav>
+        <nav class="nav">
+            <img src="\starter-code\assets\shared\logo.svg" alt="icon" id="logo">
+            <ul class="navlink barlow-condensed-regular">
+                <li><a href="/home.html">00 Home</a></li>
+                <li><a href="/destination.html"> 01 Destination</a></li>
+                <li><a href="/crew.html">02 Crew</a></li>
+                <li><a href="/technology.html">03 Technology</a></li>
+            </ul>
+        </nav>
+    </header>
     <section class="sect-home">
         <div class="home-text">
             <h2 class="h2-home barlow-condensed-regular">So, you want to travel to</h2>
@@ -48,7 +50,7 @@
             link.parentElement.classList.add('active');
         }
     });
-    
+
     document.addEventListener('DOMContentLoaded', () => {
     const mainNavLinks = document.querySelectorAll('.navlink li a');
     const menuIcon = document.getElementById('menu-icon');

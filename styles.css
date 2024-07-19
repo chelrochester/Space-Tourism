@@ -393,6 +393,11 @@ a {
         padding: 10px;
     }
 
+    .nav-header {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
     .nav {
         flex-direction: column;
         align-items: flex-start;
@@ -422,11 +427,6 @@ a {
     .navlink a {
         width: 100%;
         padding: 10px 0;
-    }
-
-    .body-dest {
-        width: 80%;
-        display: flex;
     }
 
     .sect-home, .crew-container, .tech-container {
@@ -500,6 +500,7 @@ a {
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        margin-left: 80px;
     }
 
     #dest-desc {
