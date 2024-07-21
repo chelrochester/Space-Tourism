@@ -106,6 +106,30 @@ a {
     border-bottom: 2px solid #fff;
 }
 
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, .1);  
+    backdrop-filter: blur(5px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
 #icon {
     width: auto;
 }
@@ -385,36 +409,60 @@ a {
     
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     .menu-icon {
         display: block;
-        font-size: 24px;
-        cursor: pointer;
-        padding: 10px;
+        margin: 5px;
     }
 
-    .nav-header {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .navlink {
+        background-color: rgba(0, 0, 0, 0);
+        margin: 0;
+        padding: 10px;
+        height: 30px;
+        width: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .navlink>li {
+        padding: 0;
+    }
+
+    .sidebar>li {
+        margin: 20px;
+    }
+
+
+    /* .nav-header {
         display: flex;
         flex-direction: row-reverse;
-    }
+    } */
 
-    .nav {
+    /* .nav {
         flex-direction: column;
         align-items: flex-start;
         margin: 10px;
         width: 80%;
-    }
+    } */
 
-    .navlink {
-        display: none;
+    /* .navlink {
+        display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 20px;
+        height: 20px;
+        margin: 0;
         background-color: rgba(255, 255, 255, .1);
         backdrop-filter: blur(5px);
         text-align: center;
-    }
+    } */
 
-    .navlink.active {
+    /* .navlink.active {
         display: flex;
     }
 
@@ -427,7 +475,7 @@ a {
     .navlink a {
         width: 100%;
         padding: 10px 0;
-    }
+    } */
 
     .sect-home, .crew-container, .tech-container {
         flex-direction: column;
