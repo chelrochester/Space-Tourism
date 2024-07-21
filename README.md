@@ -51,25 +51,7 @@ Users should be able to:
 
 ### Code
 
-<header class="nav-header">
-        <nav class="nav">
-            <img src="\starter-code\assets\shared\logo.svg" alt="icon" id="logo">
-            <ul class="navlink barlow-condensed-regular">
-                <li class="hideOnMobile"><a href="/home.html">00 Home</a></li>
-                <li class="hideOnMobile"><a href="/destination.html"> 01 Destination</a></li>
-                <li class="hideOnMobile"><a href="/crew.html">02 Crew</a></li>
-                <li class="hideOnMobile"><a href="/technology.html">03 Technology</a></li>
-                <li class="menu-icon" id="menu-icon" onclick=showSidebar()><a href="#" ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg></a></li>
-            </ul>
-            <ul class="sidebar barlow-condensed-regular">
-                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg></a></li>
-                <li><a href="/home.html">00 Home</a></li>
-                <li><a href="/destination.html"> 01 Destination</a></li>
-                <li><a href="/crew.html">02 Crew</a></li>
-                <li><a href="/technology.html">03 Technology</a></li>
-            </ul>
-        </nav>
-    </header>
+#### CSS Styling
 
     .sidebar {
     position: fixed;
@@ -126,6 +108,17 @@ Users should be able to:
 
 ...
 
+#### Vanilla Javascript 
+
+  function showSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+
+  function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
 
 ### Useful resources
 
