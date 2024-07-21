@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](space-tourism-website-main/starter-code/assets/space-tourism-homepage.png)
+![](git@github.com:chelrochester/space-tourism-image.git)
 
 ### Links
 
