@@ -31,7 +31,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [URL](https://main--inquisitive-capybara-23439a.netlify.app/)
 
 ## My process
