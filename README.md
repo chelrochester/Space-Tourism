@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [space tourism](https://main--inquisitive-capybara-23439a.netlify.app/)
+- Live Site URL: [space tourism]([https://main--inquisitive-capybara-23439a.netlify.app/](https://spacetourism-chelrochester.netlify.app/))
 
 ## My process
 
