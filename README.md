@@ -4,6 +4,7 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 ## Table of contents
 
+- [Development Workflow](#development-workflow)
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
@@ -13,6 +14,40 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+
+## Development Workflow
+
+### Cloning the Repository
+To start working on this project, clone the repository to your local machine using the following command:
+
+```bash
+git clone git@github.com:chelrochester/space-tourism-image.git
+
+### Pulling the latest Changes
+Before starting any new work, ensure you have the latest changes from the main repository:
+
+git pull origin main
+
+### Committing Your Changes
+Commit your changes with a clear and concise commit message:
+
+git add .
+git commit -m "Add your commit message here"
+
+### Pushing Changes to Remote
+Push your changes to the remote repository:
+
+git push origin feature/your-feature-name
+
+### Creating a Pull Request
+Once your feature or bugfix is complete, create a pull request from your branch to the main branch on GitHub.
+
+### Deploying to Production/Development
+To push the changes to the production or development environment, follow the deployment guidelines of your project. For example:
+
+git checkout main
+git merge feature/your-feature-name
+git push origin main
 
 
 ## Overview
