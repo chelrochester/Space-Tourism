@@ -1,4 +1,7 @@
 # Frontend Mentor - Space tourism website solution
+![CSS](https://img.shields.io/badge/CSS-3-blue)
+![HTML](https://img.shields.io/badge/HTML-5-orange)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 
 This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
